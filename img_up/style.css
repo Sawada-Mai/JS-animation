@@ -1,0 +1,27 @@
+.box{
+  margin:2000px 20px 200px 100px;
+}
+
+.fadeUpTrigger{
+  opacity: 0;
+}
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.9s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateX(-100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateX(0);
+    }
+  }
+
