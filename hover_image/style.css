@@ -1,0 +1,32 @@
+
+.link {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.default_img {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.text {
+  color: #fff;
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 0.7s ease, bottom 0.7s ease;
+}
+
+
+.default_img:hover {
+  opacity: 0.7;
+}
+.default_img:hover + .text {
+  opacity: 1;
+  bottom: 10px;
+}
+
+

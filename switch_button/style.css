@@ -1,0 +1,27 @@
+.product__btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 100px
+}
+.product__btn {
+  cursor: pointer;
+}
+.product__btn {
+  width: 150px;
+  height: 150px;
+}
+.product__btn.active {
+  border: solid 2px #333;
+}
+
+
+.product__fig {
+  display: none;
+}
+.product__fig-wrap {
+  display: flex;
+  justify-content: center;
+}
+.product__fig.active {
+  display: block;
+}
