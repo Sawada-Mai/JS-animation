@@ -1,0 +1,88 @@
+
+.first {
+  height: 1500px;
+  margin-top: 20px;
+  border: solid 5px rgb(221, 223, 140);
+}
+.second {
+  height: 1000px;
+  border: solid 5px rgb(255, 181, 181);
+}
+.third {
+  height: 1500px;
+  border: solid 5px rgb(168, 213, 255);
+}
+.fourth {
+  height: 1000px;
+  border: solid 5px rgb(171, 255, 181);
+}
+.fifth {
+  height: 1000px;
+  margin-bottom: 20px;
+  border: solid 5px rgb(255, 170, 200)
+}
+
+.container {
+  position: relative;
+}
+
+.first_line::after {
+  content: '';
+  width: 116px;
+  height: 0px;
+  background-color: rgba(214, 209, 145);
+  position: absolute;
+  z-index: -1;
+  left: 200px;
+}
+.first_line.showBlock::after {
+  transition: all ease-out 5s;
+  height: 2520px;
+}
+
+.second_line::after {
+  content: '';
+  width: 0px;
+  height: 116px;
+  background-color: rgba(255, 171, 171);
+  position: absolute;
+  /* z-index: -1; */
+  top: 200px;
+}
+.second_line.showBlock::after {
+  transition: all ease-out 5s;
+  width: 100%;
+}
+
+.third_line::after {
+  content: '';
+  width: 116px;
+  height: 0px;
+  background-color: rgb(164, 181, 255);
+  position: absolute;
+  transform-origin: left top; /* 基準点 */
+  transform: rotate(-45deg);
+  z-index: -2;
+  top: -370px;
+  left: -100px;
+}
+.third_line.showBlock::after {
+  transition: all ease-out 5s;
+  height: 2000px;
+}
+
+.fourth_line::after {
+  content: '';
+  width: 116px;
+  height: 0px;
+  background-color: rgb(214, 145, 200);
+  position: absolute;
+  z-index: -1;
+  right: 300px;
+  bottom: 0;
+}
+
+.fourth_line.showBlock::after {
+  transition: all ease-out 5s;
+  height: 2520px;
+}
